@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degla Exam Links</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Disposition" content="inline">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        body {
+            display:  flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200vh;
+            background-color: #000000 ;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: inline;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        label {
+            color:#66CCFF;
+            margin-bottom: 1px;
+        }
+
+        input {
+            padding:15px;
+            width:90%;
+            border: 1px solid #ff0000;
+            border-radius: 1px;
+            margin-bottom: 1px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style=  "color:#000000;font-family:Times New Roman, Times, serif;font-size:300%;">Degla Exam Links</h1>
+        <label for="code-input"><h1 dir="rtl";lang="ar"; style="text-align:right;font-size:160%;">اكتب كود امتحان الجمعة:</h1></label>
+        <input type="text" id="code-input" placeholder="Enter code">
+
+		    </div>
+<br>
+<br>
+	<h3 style="text-align:center;font-size:55%;color:red;">This Tool Powerd By:</h3>
+	<h1 dir="rtl"; lang="ar";
+style="text-align:center;font-size:120%;color:red;">حُــسَــيْــن أَبُــوعَــبْــدُالــلّٰــه</h1>
+		<br>
+			<br>
+        <button onclick="redirect()">Get Your Link</button>
+    <script>
+        function redirect() {
+            let codeInput = document.getElementById("code-input").value;
+            let link;
+            if (codeInput >= 1 && codeInput < 100) {
+                link= "https://www.link.com";
+            } else if (codeInput >= 100 && codeInput < 200) {
+                link = "https://www.link1.com";
+            } else if (codeInput >= 200 && codeInput < 300) {
+                link = "https://www.link2.com";
+            } else if (codeInput >= 300 && codeInput < 400) {
+                link = "https://www.link4.com";
+            } else if (codeInput >= 400 && codeInput < 500) {
+                link = "https://www.link5.com";
+            } else if (codeInput >= 500 && codeInput < 600) {
+                link = "https://www.link6.com";
+            } else if (codeInput >= 600 && codeInput < 700) {
+                link = "https://www.link7.com";
+            } else if (codeInput >= 700 && codeInput < 800) {
+                link = "https://www.link8.com";
+            } 
+else if (codeInput >= 800 && codeInput < 900) {
+                link = "https://www.link9.com";
+            }
+ else if (codeInput >= 900 && codeInput < 1000) {
+                link = "https://www.link10.com";
+            } 
+ else {
+                alert("Invalid code.");
+                return;
+            }   
+         let anchorElement = document.createElement("a");
+    anchorElement.href = link;
+    anchorElement.target = "_blank";
+    anchorElement.click();
+
+        }
+		
+    </script>
+</body>
+</html>
